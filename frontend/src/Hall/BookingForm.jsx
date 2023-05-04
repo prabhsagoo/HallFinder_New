@@ -11,14 +11,15 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { storage } from "../Firebase/firebase";
 import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 
 const BookingForm = () => {
-    const [photo, setPhoto] = useState(null);
-  const [photoURL, setPhotoURL] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [percent, setPercent] = useState(0);
-  const [depositAmount, setDepostAmount] = useState(100);
+  console.log("I am in Hall Data");
+  const {state} = useLocation();
+  console.log(state);
+ 
   const [imageUpload, setImageUpload] = useState(null);
   const [date, setDate] = useState("");
 
@@ -48,6 +49,8 @@ const BookingForm = () => {
       location.reload()});
   };
   return (
+<>
+
     <div className="col-xl-9">
       {/*  !<!-- Account details card--> */}
       <div className="cardProfile2 mb-4">
@@ -159,7 +162,7 @@ const BookingForm = () => {
           </form>
         </div>
       </div>
-    </div>
+    </div></>
   )
 }
 

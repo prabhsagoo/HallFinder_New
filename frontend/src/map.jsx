@@ -12,12 +12,15 @@ import { CardActionArea } from "@mui/material";
 import * as turf from "@turf/turf";
 import { AuthContext } from "./components/auth";
 import Slideshow from "./slideshow/Slideshow";
-
+import Button from "@mui/material/Button";
+import BookingForm from "./Hall/BookingForm";
+import { useNavigate } from "react-router-dom";
 
 mapboxgl.accessToken = import.meta.env.VITE_PUBLIC_KEY;
 
 const Map = () => {
-    const mapContainer = useRef(null);
+  const navigate = useNavigate();
+  const mapContainer = useRef(null);
   let map = useRef(null);
   let loc = useRef(null);
   const [userLng, setUserLng] = useState("");
@@ -29,7 +32,8 @@ const Map = () => {
   const [filterData, setFilterData] = useState(data);
   const [fly, setFly] = useState([]);
   let currentUserData = [];
-  const { currentUser, setCurrentUser, image, setImage } = useContext(AuthContext);
+  const { currentUser, setCurrentUser, image, setImage } =
+    useContext(AuthContext);
   const geoCoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl,
@@ -40,17 +44,16 @@ const Map = () => {
     bbox: [-140.99778, 41.6751050889, -52.6480987209, 83.23324],
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     const item = localStorage.getItem("user");
     console.log(item);
-    if(localStorage.getItem("user")!= "undefined"|| null){
+    if (localStorage.getItem("user") != "undefined" || null) {
       currentUserData = JSON.parse(localStorage.getItem("user"));
-     // console.log("abc"+currentUserData.uid);
+      // console.log("abc"+currentUserData.uid);
       setCurrentUser(currentUserData);
       setImage(localStorage.getItem("imageUrl"));
     }
-  },[]);
-  
+  }, []);
 
   useEffect(() => {
     geoCoder.on("result", function (results) {
@@ -139,7 +142,6 @@ const Map = () => {
     getAllData();
   }, [data]);
 
-  
   function flyToStore(currentFeature) {
     console.log("Second Hook");
     // map.flyTo({
@@ -179,7 +181,7 @@ const Map = () => {
   }
   return (
     <div className="data" id="data">
-            <Slideshow />
+      <Slideshow />
 
       <div className="list">
         <ul id="listData" key={Math.random()}>
@@ -198,17 +200,38 @@ const Map = () => {
                     <img src={b.properties.img} height="200px" width="100%" />
                   </CardMedia>
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      {b.properties.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {b.properties.address}
-                      <br />
-                      <span style={{ fontSize: "18px", color: "black" }}>
+                    <div style={{ display: "flex", gap: "10px" }}>
+                      <div>
+                        <Typography gutterBottom variant="h5" component="div">
+                          {b.properties.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          {b.properties.address}
+                          <br />
+                          <span style={{ fontSize: "18px", color: "black" }}>
+                            {" "}
+                            {userLng ? Math.round(b.distance) + " Km Away" : ""}
+                          </span>
+                        </Typography>
+                      </div>
+                      <div>
                         {" "}
-                        {userLng ? Math.round(b.distance) + " Km Away" : ""}
-                      </span>
-                    </Typography>
+                        <Button
+                          variant="outlined"
+                          style={{
+                            width: "130px",
+                            height: "40px",
+                            color: "#112d32",
+                            borderColor: "#112d32",
+                          }}
+                          onClick={() => {
+                            navigate("/viewhall",{state: b});
+                          }}
+                        >
+                          Book
+                        </Button>
+                      </div>
+                    </div>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -242,7 +265,7 @@ const Map = () => {
       </h4> */}
       <div ref={mapContainer} className="map-container" />
     </div>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;
