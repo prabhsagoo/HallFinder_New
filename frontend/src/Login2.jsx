@@ -154,7 +154,7 @@ const Register = async (e) => {
             Already have an account? <Link to="/">Login</Link> now.
           </div>
         </div>
-        //Login with Email & Password // // //
+        {/* Login with Email & Password // // // */}
         <div className="form-container sign-in-container">
           <form onSubmit={Login}>
             <h1>Sign in</h1>
