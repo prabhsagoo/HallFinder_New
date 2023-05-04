@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useContext } from "react";
 import "./App.css";
-import mapboxgl from "mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import Geolocation from "@mapbox/mapbox-gl-geocoder/lib/geolocation";
 import { dataGeo } from "./data.js";
@@ -117,18 +117,18 @@ const Map = () => {
     map.addControl(new mapboxgl.NavigationControl());
 
     //Array data.map
-    // data.map((a) => {
-    //   const el = document.createElement("div");
-    //   el.className = "marker";
-    //   new mapboxgl.Marker(el)
-    //     .setLngLat([a.geometry.coordinates[0], a.geometry.coordinates[1]])
-    //     .setPopup(
-    //       new mapboxgl.Popup({ offset: 25 }) // add popups
-    //         .setHTML(`<H3>${a.properties.name}</h3>`)
-    //     )
-    //     .addTo(map);
-    //   // console.log(dataGeo.features[i].geometry.coordinates);
-    // });
+    data.map((a) => {
+      const el = document.createElement("div");
+      el.className = "marker";
+      new mapboxgl.Marker(el)
+        .setLngLat([a.geometry.coordinates[0], a.geometry.coordinates[1]])
+        .setPopup(
+          new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML(`<H3>${a.properties.name}</h3>`)
+        )
+        .addTo(map);
+      // console.log(dataGeo.features[i].geometry.coordinates);
+    });
 
     console.log("useEffect");
     async function getAllData() {

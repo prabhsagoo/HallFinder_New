@@ -520,6 +520,10 @@ export const dataGeo = {
           img: "",
           address: "600 Northmount Dr NW, Calgary, AB T2K 3J5",
         },
+        geometry: {
+            type: "Point",
+            coordinates: [-114.1825231, 51.0472992],
+          },
         programs: {
           sports: "No",
           dance: "No",
@@ -580,6 +584,10 @@ export const dataGeo = {
           img: "",
           address: "636 Marlborough Way NE Calgary, AB T2A 4L2",
         },
+        geometry: {
+            type: "Point",
+            coordinates: [-114.1825231, 51.0472992],
+          },
         recreationAmenities: {
           other: "N/A",
           skatingRink: "No",
