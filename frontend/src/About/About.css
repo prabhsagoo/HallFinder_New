@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Mukta', sans-serif;
+}
+body{
+    background-color: #b0f3ed;
+    background-color: white;
+} */
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 120px auto;
+}
+.heading h1{
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin:0 auto;
+background-color: #307ca9;
+}
+.heading p{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 35px;
+}
+.container7{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.5);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+font-size: 23px;
+margin-bottom: 15px;
+color: #333;
+}
+
+.about-content h2::after{
+    content:"";
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    display: block;
+    margin:0 auto;
+background-color: #307ca9;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 8px 17px;
+    background-color: #774ded;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e90;
+}
+@media screen and (max-width:768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;   
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+
+/* Our Team */
+
+.team{
+    margin: 75px 0;
+}
+
+.row{
+  display: flex;
+
+}
+  
+
+ h1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;  
+ }
+ h1:after{
+    content: '';
+    background:#333;
+    display: block;
+    height: 3px;
+    width: 190px;
+    margin: 10px auto;
+ }
+ .profile{
+    margin-top: 25px;
+ }
+ .profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+    margin: 0 75px;
+ }
+ .profile h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+ }
+ .profile h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+
+ }
+
+ .profile p{
+text-align: center;
+margin: 20px 10px;
+
+ }
+ .img-box:after{
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+ }
+ .img-box ul{
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; 
+}
+.img-box ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;
+}
+.img-box a{
+    color: #fff;
+}
+.img-box:hover:after{
+    opacity: 1;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box a:hover li{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.img-box:after, .img-box ul, .img-box ul li{
+    transition: all 0.5s ease-in-out 0s;
+}

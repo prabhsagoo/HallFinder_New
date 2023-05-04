@@ -17,6 +17,7 @@ import Slideshow from './slideshow/Slideshow';
 import BookingForm from './Hall/BookingForm';
 import Admin from './admin/Admin';
 import Footer from './Footer/Footer';
+import About from './About/About';
 
 const style = {
   border: "2px solid purple",
@@ -68,7 +69,7 @@ function App() {
             </a>
           </li>
           <li>
-            <a className="nav-item" href="#">
+            <a className="nav-item" href="/about">
               About
             </a>
           </li>
@@ -89,6 +90,7 @@ function App() {
           <Route exact path="/reset" element={<Reset />} />
           <Route exact path="/viewhall" element={<BookingForm />} />
           <Route exact path="/admin" element={<Admin />} />
+          <Route exact path="/about" element={<About />} />
           
           <Route exact path="/profile" element={<UserProfile />} />
 
