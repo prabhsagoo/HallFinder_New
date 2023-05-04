@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 //import './Style.css'
 //import "./style.css";
-// import "./HallPage.css";
+import "./HallPage.css";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 import { MuiFileInput } from "mui-file-input";
-import Book from "./Book";
-// import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import Book from "./Book"; 
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { storage } from "../Firebase/firebase";
@@ -59,8 +59,8 @@ const BookingForm = () => {
                 Date
               </label>
             </div>
-            <LocalizationProvider >
-            {/* dateAdapter={AdapterDayjs} */}
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+            
               <DatePicker
                 className="form-control2"
                 id="datePicker"

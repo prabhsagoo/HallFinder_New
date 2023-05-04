@@ -17,6 +17,7 @@
     "@mui/material": "^5.12.3",
     "@mui/x-date-pickers": "^6.3.0",
     "@turf/turf": "^6.5.0",
+    "dayjs": "^1.11.7",
     "firebase": "^9.21.0",
     "mapbox-gl": "^2.14.1",
     "mui-file-input": "^2.0.0",
