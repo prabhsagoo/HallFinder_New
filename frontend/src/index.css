@@ -1,0 +1,44 @@
+.abc {
+  background-color: #112d32;
+  height: 75px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Wanderlust", sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  left: 0;
+
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 35px 0 0 450px;
+  display: flex;
+  gap: 5rem;
+}
+/* nav li:hover, nav li:focus{
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+} */
+.nav-item:hover,
+.nav-item:focus {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.home{
+height: 100px;
+}
