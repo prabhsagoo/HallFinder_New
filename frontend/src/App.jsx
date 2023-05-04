@@ -16,6 +16,7 @@ import Slideshow from './slideshow/Slideshow';
 // import Footer from './footer/footer';
 import BookingForm from './Hall/BookingForm';
 import Admin from './admin/Admin';
+import Footer from './Footer/Footer';
 
 const style = {
   border: "2px solid purple",
@@ -94,7 +95,7 @@ function App() {
         </Routes>
       </Router>
           </div>
-          {/* <Footer /> */}
+          <Footer />
           </>
   )
 }
