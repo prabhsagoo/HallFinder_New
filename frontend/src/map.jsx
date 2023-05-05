@@ -197,7 +197,7 @@ const Map = () => {
               >
                 <CardActionArea className="card1">
                   <CardMedia>
-                    <img src={b.properties.img} height="200px" width="100%" />
+                    <img src={b.properties.img[0]} height="200px" width="100%" />
                   </CardMedia>
                   <CardContent>
                     <div style={{ display: "flex", gap: "10px" }}>
@@ -230,6 +230,7 @@ const Map = () => {
                         >
                           Book
                         </Button>
+                        <h2 style={{color:"black", marginTop:"20px"}}>{b.properties.price}</h2>
                       </div>
                     </div>
                   </CardContent>

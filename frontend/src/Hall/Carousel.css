@@ -1,0 +1,122 @@
+.image1 {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    /* position: relative; */
+    left: 0;
+  }
+  .images1{
+    top: 0;
+    margin-top: 0   ;
+  }
+  .one1,
+  .two1,
+  .three1 {
+    position: absolute;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -18;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+  
+  .one1 {
+    animation-delay: 0s;
+  }
+  .two1{
+    animation-delay: 4s;
+  }
+  .three1 {
+    animation-delay: 8s;
+  }
+  
+  @keyframes fade {
+    /* By offsetting the fade out and animating z-index, we can prevent the background from showing up at all*/
+    00.00% {
+      opacity: 0;
+      z-index: -10;
+    }
+    06.25% {
+      opacity: 1;
+      z-index: -10;
+    }
+    31.25% {
+      opacity: 1;
+      z-index: -12;
+    }
+    37.50% {
+      opacity: 0;
+      z-index: -14;
+    }
+    100.0% {
+      opacity: 0;
+      z-index: -16;
+    }
+  }
+  
+ 
+  
+ 
+  
+  .image1 {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    /* position: relative; */
+    left: 0;
+  }
+  
+  .one1,
+  .two1,
+  .three1 {
+    position: absolute;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -18;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+  
+  .one1 {
+    animation-delay: 0s;
+  }
+  .two1 {
+    animation-delay: 4s;
+  }
+  .three1 {
+    animation-delay: 8s;
+  }
+  
+  @keyframes fade {
+    /* By offsetting the fade out and animating z-index, we can prevent the background from showing up at all*/
+    00.00% {
+      opacity: 0;
+      z-index: -10;
+    }
+    06.25% {
+      opacity: 1;
+      z-index: -10;
+    }
+    31.25% {
+      opacity: 1;
+      z-index: -12;
+    }
+    37.50% {
+      opacity: 0;
+      z-index: -14;
+    }
+    100.0% {
+      opacity: 0;
+      z-index: -16;
+    }
+  }
+  
+ 

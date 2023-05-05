@@ -5,14 +5,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 1,
-          isAlien: "yes",
+          price: "$400",
           name: "Marda Loop Community Association",
-          img: "src/images/halls/communityhall1.jpg",
+          img: ["src/images/halls/marda1.jpg","src/images/halls/marda2.jpg", "src/images/halls/marda3.jpg", "src/images/halls/marda4.jpeg", "src/images/halls/marda5.jpeg"],
           address: "3130 - 16th Street SW Calgary, AB T2T 4G7, Canada",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1011762, 51.0256322],
+          coordinates: [-114.1011762, 51.0256289],
         },
         communityAssociationInformation: {
           facilityEmail: "N/A",
@@ -69,9 +69,9 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 2,
-          isAlien: "",
+          price: "$500",
           name: "Strathcona Christie Aspen Community Association",
-          img: "src/images/halls/CH2.jpeg",
+          img: ["src/images/halls/CH2.jpeg"],
           address: "277 Strathcona Dr SW, Calgary, AB T3H 2A4, Canada",
         },
         geometry: {
@@ -132,9 +132,9 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 3,
-          isAlien: "",
+          price: "$450",
           name: "Bankview Community Association",
-          img: "src/images/halls/CH3.jpeg",
+          img: ["src/images/halls/bank1.jpg","src/images/halls/bank2.jpg","src/images/halls/bank3.jpg"],
           address: "2418 17 St SW, Calgary, AB T2T 4M8, Canada",
         },
         geometry: {
@@ -195,14 +195,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$400",
           name: "Palliser Bayview Pumphill Community Association",
-          img: "src/images/halls/CH4.jpeg",
+          img: ["src/images/halls/paliser1.jpg","src/images/halls/paliser2.jpg","src/images/halls/paliser3.jpg","src/images/halls/paliser4.jpg",],
           address: "2323 Palliser Dr SW, Calgary, AB T2V 3S4, Canada",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1161444, 50.968834],
+          coordinates: [-114.1166424, 50.9687686],
         },
         communityAssociationInformation: {
           federalCharityStatusRegistered: "Yes",
@@ -260,14 +260,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$500",
           name: "Bridgeland-Riverside Community Association",
-          img: "",
+          img: ["src/images/halls/bridge1.jpg","src/images/halls/bridge2.jpg","src/images/halls/bridge3.jpg","src/images/halls/bridge4.jpg",],
           address: "917 Centre Ave NE, Calgary, AB T2E 0C6",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-114.0433038, 51.0520922],
         },
         communityAssociationFacilities: {
           stage: "NA",
@@ -324,14 +324,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$350",
           name: "Braeside Community Association",
-          img: "",
+          img: ["src/images/halls/br1.jpg","src/images/halls/br2.jpg","src/images/halls/br3.jpg",],
           address: "1024 Braeside Dr SW, Calgary, AB T2W 6G5",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-114.1129654, 50.9542104],
         },
         programs: {
           dance: "No",
@@ -387,14 +387,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$400",
           name: "Hounsfield Heights – Briar Hill Community Association",
-          img: "",
+          img: ["src/images/halls/bridge2.jpg"],
           address: "1928 14 Ave NW, Calgary, AB T2N 1M5",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-114.1068398, 51.0664915],
         },
         recreationAmenities: {
           sportsPlayfields: "No",
@@ -452,14 +452,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$600",
           name: "Bowness Community Association",
-          img: "",
+          img: ["src/images/halls/bow2.jpg",],
           address: "7904 43 Ave NW, Calgary, AB T3B 4P9",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-114.2030588, 51.0916018],
         },
         recreationAmenities: {
           tennisCourts: "No",
@@ -515,14 +515,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$500",
           name: "Cambrian Heights Community Association",
-          img: "",
+          img: ["src/images/halls/bridge4.jpg"],
           address: "600 Northmount Dr NW, Calgary, AB T2K 3J5",
         },
         geometry: {
             type: "Point",
-            coordinates: [-114.1825231, 51.0472992],
+            coordinates: [-114.0900111, 51.0867915],
           },
         programs: {
           sports: "No",
@@ -579,14 +579,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 4,
-          isAlien: "",
+          price: "$400",
           name: "Calgary Marlborough Community Association",
-          img: "",
+          img: ["src/images/halls/malbo1.jpg"],
           address: "636 Marlborough Way NE Calgary, AB T2A 4L2",
         },
         geometry: {
             type: "Point",
-            coordinates: [-114.1825231, 51.0472992],
+            coordinates: [-113.9775049, 51.05869],
           },
         recreationAmenities: {
           other: "N/A",
@@ -643,14 +643,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 2,
-          isAlien: "",
+          price: "$300",
           name: "Brentwood Community Association",
-          img: "src/images/halls/CH2.jpeg",
+          img: ["src/images/halls/br1.jpg","src/images/halls/br2.jpg","src/images/halls/br3.jpg",],
           address: "1520 Northmount Dr NW, Calgary, AB T2L 0G6",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-114.1403172, 51.0968633],
         },
         programs: {
           sports: "Yes",
@@ -706,14 +706,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 2,
-          isAlien: "",
+          price: "$600",
           name: "Abbeydale Community Association",
-          img: "src/images/halls/CH2.jpeg",
+          img: ["src/images/halls/abb.jpg"],
           address: "821 Abbeydale Dr NE, Calgary, AB T2A 6N7",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-113.9345655, 51.0596791],
         },
         communityAssociationInformation: {
           facilityLocatedat: "821 Abbeydale Drive NE",
@@ -769,14 +769,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 2,
-          isAlien: "",
+          price: "$400",
           name: "Temple Community Association",
-          img: "src/images/halls/CH2.jpeg",
+          img: ["src/images/halls/CH2.jpeg"],
           address: "167 Templegreen Rd NE, Calgary, AB T1Y 6G3",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-113.947488, 51.0874509],
         },
         programs: {
           bingo: "No",
@@ -832,14 +832,14 @@ export const dataGeo = {
         type: "Feature",
         properties: {
           ID: 2,
-          isAlien: "",
+          price: "$380",
           name: "Banff Trail Community Association",
-          img: "src/images/halls/CH2.jpeg",
+          img: ["src/images/halls/banff1.jpg","src/images/halls/banff2.webp","src/images/halls/banff3.webp"],
           address: "2115 20 AVE, Calgary, AB T2M 1J1",
         },
         geometry: {
           type: "Point",
-          coordinates: [-114.1825231, 51.0472992],
+          coordinates: [-114.1115819, 51.0703017],
         },
         cityQuadrant: "NW",
         communityAssociationName: "Banff Trail Community Association",

@@ -12,6 +12,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { storage } from "../Firebase/firebase";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
+import Carousel from "./Carousel";
 
 
 
@@ -50,7 +51,7 @@ const BookingForm = () => {
   };
   return (
 <>
-
+<div><Carousel state = {state} /></div>
     <div className="col-xl-9">
       {/*  !<!-- Account details card--> */}
       <div className="cardProfile2 mb-4">
