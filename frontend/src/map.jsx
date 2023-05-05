@@ -15,6 +15,8 @@ import Slideshow from "./slideshow/Slideshow";
 import Button from "@mui/material/Button";
 import BookingForm from "./Hall/BookingForm";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 
 mapboxgl.accessToken = import.meta.env.VITE_PUBLIC_KEY;
 
@@ -225,7 +227,15 @@ const Map = () => {
                             borderColor: "#112d32",
                           }}
                           onClick={() => {
-                            navigate("/viewhall",{state: b});
+                            if (currentUser != null){
+                            navigate("/viewhall",{state: b});}
+                            else{
+                              Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'You must login first!'
+                              })
+                            }
                           }}
                         >
                           Book
