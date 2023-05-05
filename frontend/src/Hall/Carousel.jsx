@@ -7,7 +7,7 @@ const Carousel = (props) => {
   let state = props.state;
   return (
     <div className="images1">
-      <img src="src/images/halls/CH3.jpeg" className="one1 image1" />
+      <img src={state.properties.img[0]} className="one1 image1" />
       <img src="src/images/halls/marda3.jpg" className="two1 image1" />
       <img src="src/images/halls/marda4.jpeg" className="three1 image1" />
       <div id="text">
