@@ -13,6 +13,7 @@ import { storage } from "../Firebase/firebase";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
 import Carousel from "./Carousel";
+import HallTable from "./HallTable";
 
 
 
@@ -52,6 +53,8 @@ const BookingForm = () => {
   return (
 <>
 <div className="BookCarousel"><Carousel state = {state} /></div>
+<div className="tableAndForm"><div>
+<HallTable value={state}/></div>
     <div className="col-xl-9">
       {/*  !<!-- Account details card--> */}
       <div className="cardProfile2 mb-4">
@@ -163,7 +166,7 @@ const BookingForm = () => {
           </form>
         </div>
       </div>
-    </div></>
+    </div></div></>
   )
 }
 

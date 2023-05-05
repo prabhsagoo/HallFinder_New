@@ -1,0 +1,35 @@
+
+
+.TableBody{
+
+    border: 1px solid black;
+    width: 110%;
+    height: 950px;
+    -webkit-box-shadow: 5px 6px 12px 4px rgba(0,0,0,0.84); 
+box-shadow: 5px 6px 12px 4px rgba(0,0,0,0.84);
+    
+}
+.TableHead{
+background-color: #112D32;
+
+}
+.TableRemData{
+
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+}
+
+.TableData1{
+
+    margin-left: 0px;
+    margin-right: 0;
+}
+.TableData2{
+
+    margin-left: 0px;
+}
+.TableData3{
+
+    margin-left: 0px;
+}

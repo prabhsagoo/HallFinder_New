@@ -119,4 +119,31 @@
     }
   }
   
- 
+  #text {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    border: 4px bold black;
+    /* background: transparent; */
+  }
+  #hallText{
+    font-family: "70px";
+     color:"white";
+     font-weight: 400;
+    border:"2px bold #112d32"
+  }
+  
+  #textMain{
+    /* font-family: Impact, Charcoal, sans-serif; */
+    font-family: pesta-roasting;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 8px 8px 10px;
+    font-variant: small-caps;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    text-decoration: none;
+    -webkit-text-stroke: 1px #112d32;
+  }
