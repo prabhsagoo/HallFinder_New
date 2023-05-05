@@ -133,7 +133,7 @@ const Register = async (e) => {
             <button
               style={{
                 backgroundColor: "#112d32",
-                width: "17rem",
+                width: "18rem",
                 textAlign: "start",
               }}
               className="register__btn register__google"
@@ -192,7 +192,7 @@ const Register = async (e) => {
             <button
               style={{
                 backgroundColor: "#112d32",
-                width: "15rem",
+                width: "17rem",
                 textAlign: "start",
               }}
               className="login__btn login__google"
