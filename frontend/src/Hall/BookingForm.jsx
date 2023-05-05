@@ -51,7 +51,7 @@ const BookingForm = () => {
   };
   return (
 <>
-<div><Carousel state = {state} /></div>
+<div className="BookCarousel"><Carousel state = {state} /></div>
     <div className="col-xl-9">
       {/*  !<!-- Account details card--> */}
       <div className="cardProfile2 mb-4">

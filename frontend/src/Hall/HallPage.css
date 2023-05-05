@@ -1,3 +1,8 @@
+.BookCarousel{
+margin: 0;
+display: flex;
+}
+
 .bookingRow {
     display: flex;
     gap: 4rem;
@@ -8,7 +13,7 @@
     width: 100%;
     background-color: transparent;
     clear: both;
-    margin-top: 200px;
+    margin-top: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

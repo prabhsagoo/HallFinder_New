@@ -7,7 +7,7 @@
   }
   .images1{
     top: 0;
-    margin-top: 0   ;
+    margin-top: 0;
   }
   .one1,
   .two1,
@@ -20,7 +20,7 @@
     z-index: -18;
     opacity: 0;
     animation-name: fade;
-    animation-duration: 12s;
+    animation-duration: 24s;
     animation-iteration-count: infinite;
   }
   
@@ -28,10 +28,10 @@
     animation-delay: 0s;
   }
   .two1{
-    animation-delay: 4s;
+    animation-delay: 8s;
   }
   .three1 {
-    animation-delay: 8s;
+    animation-delay: 16s;
   }
   
   @keyframes fade {
