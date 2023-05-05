@@ -146,13 +146,15 @@ const HallTable = (props) => {
 
         {/* Community Facilities Table */}
         <div className="TableRemData">
-          <TableContainer className="TableData1"
+          <TableContainer
+            className="TableData1"
             sx={{
               flexWrap: "wrap",
               tableLayout: "auto",
-                right:0,
+              right: 0,
               maxWidth: 0.5,
               mt: 3,
+              ml:9
             }}
           >
             <Table
@@ -229,8 +231,8 @@ const HallTable = (props) => {
           <TableContainer
             className="TableData2"
             sx={{
-                mt: 3,
-              }}
+              mt: 3,
+            }}
           >
             <Table
               sx={{ display: "inline", maxWidth: 0.5 }}
@@ -296,22 +298,22 @@ const HallTable = (props) => {
           </TableContainer>
 
           <TableContainer
-          className="TableData3"
+            className="TableData3"
             sx={{
               flexWrap: "wrap",
               maxWidth: 1,
               mt: 3,
+              ml: 7
             }}
           >
             {/* Recreation Amenities Table */}
             <Table
-                            sx={{ display: "inline", maxWidth: 0.5 }}
-
+              sx={{ display: "inline", maxWidth: 0.5 }}
               aria-label="Recreation Amenities"
             >
               <TableHead className="TableHead1">
                 <TableRow>
-                  <StyledTableCell  colSpan={2} align="center">
+                  <StyledTableCell colSpan={2} align="center">
                     Recreation Amenities
                   </StyledTableCell>
                 </TableRow>

@@ -6,7 +6,7 @@ display: flex;
 .tableAndForm{
     display: flex;
     margin-top: 510px;
-    gap: 200px;
+    gap: 430px;
 }
 
 .bookingRow {
