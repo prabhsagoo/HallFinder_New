@@ -128,8 +128,8 @@ const Map = () => {
       new mapboxgl.Marker(el)
         .setLngLat([a.geometry.coordinates[0], a.geometry.coordinates[1]])
         .setPopup(
-          new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML(`<H3>${a.properties.name}</h3>`)
+          new mapboxgl.Popup({ offset: 25}) // add popups
+            .setHTML('<H3>'+a.properties.name+'</h3><img className="mapPopup" src="'+a.properties.img[0]+'"/>')
         )
         .addTo(map);
       // console.log(dataGeo.features[i].geometry.coordinates);
@@ -146,10 +146,10 @@ const Map = () => {
 
   function flyToStore(currentFeature) {
     console.log("Second Hook");
-    // map.flyTo({
-    //   center: currentFeature.geometry.coordinates,
-    //   zoom: 15,
-    // });
+    this.leafletElement.flyTo({
+      center: currentFeature.geometry.coordinates,
+      zoom: 15,
+    });
 
     // let popup = new mapboxgl.Popup({ closeOnClick: false, closeButton: false }) // add popups
     //       .setHTML(

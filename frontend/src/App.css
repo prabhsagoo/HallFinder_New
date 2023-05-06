@@ -363,6 +363,8 @@ body {
 .mapboxgl-popup-content {
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 /* Animation */
@@ -501,4 +503,3 @@ body {
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
   border-bottom-color: #91c949;
 }
-
