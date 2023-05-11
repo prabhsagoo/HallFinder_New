@@ -14,6 +14,12 @@ import {
 
   export const userRouter = express.Router();
 
+/* This code is defining a route for handling user login requests. When a POST request is made to the
+"/login" endpoint, the function defined in the second argument is executed. The function extracts
+the user's email and password from the request body, and then attempts to sign in the user using the
+Firebase `signInWithEmailAndPassword` method. If the sign-in is successful, the user's information
+is sent back in the response. If there is an error, the error message is logged to the console and a
+403 status code is sent back in the response. */
 userRouter.post("/login", async (req, res) => {
   const userData = req.body;
   try {
@@ -31,6 +37,14 @@ userRouter.post("/login", async (req, res) => {
 
 //Register with email and password!
 
+/* This code is defining a route for handling user registration requests. When a POST request is made
+to the "/reg" endpoint, the function defined in the second argument is executed. The function
+extracts the user's name, email, and password from the request body, and then attempts to create a
+new user using the Firebase `createUserWithEmailAndPassword` method. If the user creation is
+successful, the user's display name is updated using the Firebase `updateProfile` method, and the
+user's information is stored in the Firestore database using the `setDoc` method. If there is an
+error, the error message is logged to the console and a 403 status code is sent back in the
+response. */
 userRouter.post("/reg", async (req, res) => {
   const userData = req.body;
   console.log(userData);
@@ -68,6 +82,12 @@ userRouter.post("/reg", async (req, res) => {
 });
 
 
+/* This code is defining a route for handling user profile update requests. When a POST request is made
+to the "/update" endpoint, the function defined in the second argument is executed. The function
+extracts the user's updated profile information from the request body, and then updates the user's
+information in the Firestore database using the `setDoc` method. If the update is successful, a 200
+status code is sent back in the response with the message "Updated!". If there is an error, the
+error message is logged to the console and a 403 status code is sent back in the response. */
 userRouter.post("/update", async (req, res) => {
   const userData = req.body;
   try {
@@ -98,6 +118,12 @@ userRouter.post("/update", async (req, res) => {
   }
 });
 
+/* This code is defining a route for handling booking requests. When a POST request is made to the
+"/book" endpoint, the function defined in the second argument is executed. The function extracts the
+booking information from the request body, and then stores the information in the Firestore database
+using the `setDoc` method. If the booking is successful, a 200 status code is sent back in the
+response with the message "Updated!". If there is an error, the error message is logged to the
+console and a 403 status code is sent back in the response. */
 userRouter.post("/book", async (req, res) => {
   const userData = req.body;
   try {

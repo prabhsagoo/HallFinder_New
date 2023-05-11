@@ -5,6 +5,11 @@ import { firebaseConfig } from "./firebase.js";
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
+/**
+ * This function retrieves all communities from a Firestore database and returns them as an array.
+ * @returns an array of objects, where each object represents a community and contains its data as
+ * retrieved from the Firestore database.
+ */
 export async function getAllCommunities() {
  let communityArr = []
   const querySnapshot = await getDocs(collection(db, "communities"));
